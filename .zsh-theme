@@ -1,6 +1,6 @@
 PROMPT='%(?,,%{${fg_bold[red]}%}[%?]%{$reset_color%} )%(?,%{$fg[yellow]%},%{$fg[red]%})%#%{$reset_color%} '
 if [[ -n "$SSH_CLIENT"  ||  -n "$SSH2_CLIENT" ]]; then
-    RPS1='%{$fg[green]%}%~$(git_prompt_info) %{$fg_bold[orange]%}%m%{$reset_color%}'
+    RPS1='%{$fg[green]%}%~$(git_prompt_info) %{$fg_bold[magenta]%}%m%{$reset_color%}'
 else
     RPS1='%{$fg[green]%}%~$(git_prompt_info)'
 fi
